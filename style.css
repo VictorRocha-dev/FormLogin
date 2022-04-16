@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+.backimage{
+    height: 100%;
+    width: 50%;
+    background-image: url('images/side-image.jpg');
+    background-position: center;
+    background-size: cover; 
+}
+
+
+.loginpage{
+    width: 50%;
+    height: 100%;
+    background-color: #191816;
+    color: white;
+}
+.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.geralinfo{
+    width: 41vw;
+    height: 77vh;
+    background-color: #24221F;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 9vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slogan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.slogan h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #D4CCB6;
+}
+.slogan img{
+    padding: 10px;
+}
+.geralinfo p {
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #AFB6C2;
+
+    margin-top: 5px;
+}
+
+.access{
+    margin-top: 4vh;
+}
+
+.access input{
+    width: 20vw;
+    height: 8vh;
+    background-color: transparent;
+    border: solid 1px #868686;
+    border-radius: 5px;
+}
+.access input::placeholder{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #A9AFB9; 
+}
+.access label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#email{
+    background-image: url('images/mail.svg');
+    background-repeat: no-repeat;
+    text-align: center;     
+    color: white;
+    background-position-y: 50%;
+    background-position-x: 2%;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+#email:focus{
+    transition: 200ms;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background-image: url('images/mail-focus.svg'); 
+    border: solid 3px #FFC632;
+}
+
+#pass{
+    background-image: url('images/lock.svg');
+    background-repeat: no-repeat;
+    text-align: center;     
+    color: white;
+    background-position-y: 50%;
+    background-position-x: 2%;
+    margin-top: 5px;
+    
+}
+#pass:focus{
+    transition: 200ms;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    background-image: url('images/lock-focus.svg'); 
+    border: solid 3px #FFC632;
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.remember label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.remember input{
+    display: none;
+}
+.remember input + label::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: solid 1px #868686;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.remember input:checked + label::before{
+    background-color: #FFC632;
+    background-image: url('images/check.svg');
+    background-position: center;
+    background-size: contain;
+    transition: 200ms;
+    border: none;
+
+}
+.remember a{
+    margin-left: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #FFC632;
+    font-size: 14px;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600; 
+}
+.register label{
+    font-size: 14px;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 400;
+    color: #FFC632; 
+
+}
+
+button{
+    height: 7vh;
+    width: 50%;
+    background-color: #FFC632;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: 600;
+}
+
+.passdiv{
+    position: relative;
+    width: 20vw;
+    height: 8vh;
+}
+.eye {
+    position: absolute;
+    top: 40%;
+    right: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .backimage{
+        display: none;
+    }
+    .loginpage{
+        width: 100%;
+    }
+    .geralinfo{
+        width: 80%;
+    }
+    .access input{
+        width: 40vw;
+    }
+    .passdiv{
+        width: 40vw;
+    }
+
+}
+@media screen and (max-width:400px) {
+    .geralinfo{
+
+        width: 90%;
+    }
+    .access input{
+        width: 80vw;
+    }
+    .passdiv{
+        width: 80vw;
+    }
+    button{
+        width: 80vw;
+    }
+
+}

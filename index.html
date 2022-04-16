@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="loginpage">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo da empresa" />
+            </div>
+
+            <div class="geralinfo">
+                <div class="slogan">
+                    <img src="images/log-in.svg" alt="" />
+                    <h1>Faça seu login</h1>
+                </div>
+                <p>Entre com as informações de cadastro.</p>
+
+                <div class="access">
+                    <label for="email">E-mail</label>
+                    <br />
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+                    <br />
+                    <label for="pass">Senha</label>
+                    <br />
+                    <div class="passdiv">
+
+                        <input type="password" id="pass" name="password" placeholder="Digite sua senha" />
+                        <span class="eye" id="eye"><img src="images/eye.svg" alt=""></span>
+                    </div>
+                    
+
+                    <br />
+                </div>
+
+                <div class="remember">
+                    <input type="checkbox" name="check" id="check" class="checkbox" />
+                    <label for="check">Lembre-me</label>
+
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+
+                <br />
+
+                <button>Entrar</button>
+                <br />
+
+                <div class="register">
+                    <label for="register">Não tem uma conta?</label>
+                    <a href="#">Registre-se</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="backimage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
